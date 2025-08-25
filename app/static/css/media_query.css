@@ -1,0 +1,637 @@
+/* Media Queries for Header */
+@media (max-width: 768px) {
+    header {
+      padding: 15px 0; /* Reduced vertical padding */
+      margin-bottom: 5px; /* Minimal margin */
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    #theme-toggle {
+      font-size: 1.3rem;
+    }
+  
+    header::before {
+      width: 120px;
+      height: 120px;
+      top: -40px;
+      right: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+      padding: 10px 0;
+      margin-bottom: 5px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    #theme-toggle {
+      font-size: 1.1rem;
+      top: 5px;
+      right: 5px;
+    }
+  
+    header::before {
+      display: none;
+    }
+}
+
+/* Media Queries for Main Container and Sections */
+@media (max-width: 768px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    main {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .purpose-selection {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+      margin: 5px 0 !important; /* Reduced margin */
+      width: 100% !important;
+    }
+
+    .purpose-selection label {
+      justify-content: center;
+    }
+
+    #form-section {
+      width: 100% !important;
+      margin: 5px 0 !important;
+      padding: 10px 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    #form-section form {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    .form-group input {
+      padding: 8px;
+      font-size: 0.95rem;
+    }
+
+    #predict-btn {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 0 10px;
+    }
+
+    #insights-container {
+      width: 100% !important;
+      margin: 10px 0 !important; /* Consistent spacing */
+      padding: 10px 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    .insights-content {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 10px;
+    }
+
+    .insight {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: unset;
+      padding: 8px;
+    }
+
+    .insights-explanation {
+      font-size: 1rem;
+      padding: 10px;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 10px 0 !important;
+    }
+
+    #result-section {
+      width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 10px 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    #result-section h2 {
+      font-size: 1.6rem;
+      padding: 0 10px;
+    }
+
+    #prediction-message {
+      font-size: 1.1rem;
+      padding: 0 10px;
+    }
+
+    #realtor-link-container p {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+
+    #back-to-form {
+      padding: 8px 16px;
+      font-size: 0.95rem;
+      margin: 0 10px;
+    }
+
+    #history-section {
+      width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 10px 0 !important;
+      overflow-x: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    #history-table {
+      width: 100% !important;
+      min-width: 100% !important;
+      font-size: 14px;
+    }
+
+    #history-table th,
+    #history-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    #toggle-history,
+    #clear-history {
+      width: 100%;
+      margin: 10px;
+      font-size: 0.95rem;
+    }
+
+    .admin-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 10px 0 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-section {
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    .admin-container h1 {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+
+    .download-button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    .filters {
+      flex-direction: column;
+      gap: 8px;
+      padding: 8px 10px;
+    }
+
+    .filters div {
+      width: 100%;
+      min-width: unset;
+    }
+
+    .filters label {
+      font-size: 13px;
+    }
+
+    .filters input,
+    .filters select {
+      padding: 8px;
+      font-size: 13px;
+      width: 100%;
+    }
+
+    .filters button {
+      padding: 8px 12px;
+      font-size: 13px;
+      margin: 0 10px;
+    }
+
+    .table-container {
+      width: 100% !important;
+      overflow-x: auto;
+    }
+
+    .admin-table {
+      width: 100% !important;
+      min-width: 100% !important;
+      font-size: 14px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .toggle-button {
+      padding: 6px;
+      font-size: 0.95rem;
+      margin: 0 10px;
+    }
+
+    .footer-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 10px 0 !important;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: 6px;
+      padding: 0 10px;
+    }
+
+    .main-link {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+
+    .developer-credit {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    main {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .purpose-selection {
+      gap: 8px;
+      padding: 8px 0;
+      margin: 5px 0 !important;
+      font-size: 1rem;
+    }
+
+    .purpose-selection input[type="radio"] {
+      transform: scale(1);
+    }
+
+    .purpose-selection input[type="radio"]:hover {
+      transform: scale(1.1);
+    }
+
+    #form-section {
+      width: 100% !important;
+      margin: 5px 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    #form-section form {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 0 5px;
+    }
+
+    .form-group input {
+      padding: 6px;
+      font-size: 0.9rem;
+    }
+
+    #predict-btn {
+      padding: 8px;
+      font-size: 0.95rem;
+      margin: 0 5px;
+    }
+
+    #insights-container {
+      width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    .insights-title {
+      font-size: 1.3rem;
+      padding: 0 5px;
+    }
+
+    .insights-text p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      padding: 0 5px;
+    }
+
+    .insight {
+      width: 100% !important;
+      padding: 6px;
+    }
+
+    .insight img {
+      border-radius: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.85rem;
+      padding: 0 5px;
+    }
+
+    .insights-explanation {
+      font-size: 0.9rem;
+      padding: 8px 5px;
+      margin: 10px 0 !important;
+    }
+
+    #result-section {
+      width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    #result-section h2 {
+      font-size: 1.4rem;
+      padding: 0 5px;
+    }
+
+    #prediction-message {
+      font-size: 1rem;
+      padding: 0 5px;
+    }
+
+    #realtor-link-container p {
+      font-size: 0.9rem;
+      padding: 0 5px;
+    }
+
+    #back-to-form {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+      margin: 0 5px;
+    }
+
+    #history-section {
+      width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    #history-table {
+      width: 100% !important;
+      min-width: 100% !important;
+      font-size: 13px;
+    }
+
+    #history-table th,
+    #history-table td {
+      padding: 6px;
+      font-size: 13px;
+    }
+
+    #toggle-history,
+    #clear-history {
+      padding: 8px;
+      font-size: 0.9rem;
+      margin: 0 5px;
+    }
+
+    .admin-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    .admin-container h1 {
+      font-size: 18px;
+      padding: 0 5px;
+    }
+
+    .download-button {
+      padding: 8px;
+      font-size: 13px;
+      margin: 0 5px;
+    }
+
+    .filters {
+      gap: 6px;
+      padding: 6px 5px;
+    }
+
+    .filters div {
+      width: 100%;
+      min-width: unset;
+    }
+
+    .filters label {
+      font-size: 12px;
+    }
+
+    .filters input,
+    .filters select {
+      padding: 6px;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    .filters button {
+      padding: 6px 10px;
+      font-size: 12px;
+      margin: 0 5px;
+    }
+
+    .admin-table {
+      width: 100% !important;
+      min-width: 100% !important;
+      font-size: 13px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+      padding: 6px;
+      font-size: 13px;
+    }
+
+    .toggle-button {
+      padding: 5px;
+      font-size: 0.9rem;
+      margin: 0 5px;
+    }
+
+    .footer-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    .footer-links {
+      gap: 6px;
+      padding: 0 5px;
+    }
+
+    .main-link {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+
+    .developer-credit {
+      font-size: 0.9rem;
+      padding: 0 5px;
+    }
+}
+
+/* Chatbot Container */
+@media (max-width: 768px) {
+    #chatbot-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 10px 0 !important;
+      max-height: 60vh;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chatbot-message {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 8px 0 !important;
+      padding: 8px 10px !important;
+      font-size: 14px !important;
+    }
+
+    .chatbot-title {
+      font-size: 16px !important;
+      padding: 0 10px;
+    }
+
+    .recommendation-message {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #chatbot-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 10px 0 !important;
+      padding: 8px 0 !important;
+      max-height: 50vh;
+    }
+
+    .chatbot-message {
+      font-size: 13px !important;
+      padding: 6px 8px !important;
+      margin: 6px 0 !important;
+    }
+
+    .chatbot-title {
+      font-size: 14px !important;
+      padding: 0 5px;
+    }
+
+    .recommendation-message {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 6px 8px;
+    }
+}
+
+/* Modal */
+@media (max-width: 768px) {
+    .modal-content {
+      width: 100% !important;
+      margin: 15% 0 !important;
+      padding: 10px 0 !important;
+    }
+
+    .button-group {
+      flex-direction: column;
+      gap: 8px;
+      padding: 0 10px;
+    }
+
+    .button-group button {
+      width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+      width: 100% !important;
+      margin: 20% 0 !important;
+      padding: 8px 0 !important;
+    }
+
+    .modal-content p {
+      font-size: 0.9em;
+      padding: 0 5px;
+    }
+
+    .button-group button {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+}
+
+@media (max-width: 320px) {
+    .modal-content {
+      width: 100% !important;
+      margin: 25% 0 !important;
+      padding: 6px 0 !important;
+    }
+
+    .modal-content p {
+      font-size: 0.8em;
+    }
+
+    .button-group button {
+      padding: 6px 10px;
+      font-size: 0.8em;
+    }
+}
