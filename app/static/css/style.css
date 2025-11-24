@@ -173,8 +173,22 @@ header p {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Add padding for smaller screens */ 
+  width: 100%;
+  box-sizing: border-box;
 }
+
+/* Constrain everything to prevent infinite stretching */
+header,
+#form-section,
+#result-section,
+#insights-container,
+#history-section,
+.admin-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .purpose-selection {
   display: flex;
   justify-content: center; /* Centers it horizontally */
@@ -189,6 +203,9 @@ main {
   background: var(--background-secondary); /* Subtle background */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* ADD THIS */
+  margin-left: auto; /* ADD THIS */
+  margin-right: auto; /* ADD THIS */ 
 }
 
 .purpose-selection label {
