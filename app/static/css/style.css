@@ -1,3 +1,26 @@
+/* Force proper scaling on all screens */
+html {
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Constrain all major containers */
+header,
+main,
+#form-section,
+#result-section,
+#insights-container,
+#history-section,
+.admin-container,
+footer {
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 /* 
    CSS Variables (Color Tokens) to be inherited throut the entire system
  */
