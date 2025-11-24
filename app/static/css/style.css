@@ -103,6 +103,10 @@ header {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   color: #fff;
   overflow: hidden;
+   /*added for zoom issues on pc*/
+   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 /* Theme toggle button in header */
@@ -144,6 +148,7 @@ header::before {
   top: -50px;
   right: -50px;
   z-index: 0;
+   
 }
 
 header h1,
@@ -168,6 +173,7 @@ header p {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px; /* Add padding for smaller screens */ 
 }
 .purpose-selection {
   display: flex;
