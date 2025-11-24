@@ -86,7 +86,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
-  padding: 20px;
+  padding: 20px 0;  /* Changed from padding: 20px; */
   overflow-x: hidden;
 }
 
@@ -168,7 +168,19 @@ header p {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;  
+  width: 100%;     
 }
+
+header,
+section,
+footer,
+.admin-container {
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .purpose-selection {
   display: flex;
   justify-content: center; /* Centers it horizontally */
